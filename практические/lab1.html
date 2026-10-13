@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Практическая работа 1.</title>
+</head>
+<body>
+    <h1>Практическая работа 1.</h1>
+    <h2>Практическая работа 1: Основы HTML</h2>
+    <h3> Задание 1: Субъекты РФ</h3>
+    <p><b>Субъект РФ</b>, в котором я живу,- Красноярский край. Он входит в состав <u><i>Сибирского федерального округа.</i></u></p>
+    <p><i>Герб Красноярского края</i>: в червлёном поле поверх лазоревого, смещённого вправо и тонко окаймлённого золотом столба,- золотой лев, держащий золотую лопату, а в левой - золотой серп.
+    <p><i>Флаг Красноярского края</i> представляет собой прямоугольное красное полотнище , посередине флага расположен герб края.</p>
+    <p><mark>Административный центр</mark> - <b>Красноярск</b>. Одна из достопримечательностей Красноярского края - уникальный сосновый <u>Анашенский бор</u>, который находится на правобережье Енисея, на расстоянии 25 километров от села Новосёлово.</p>
+    <h3>Задание 2: Таблица субъектов РФ</h3>
+
+    <center>
+        <table border="1">
+            <tr>
+                <th colspan="2">Субъекты РФ</th>
+            </tr>
+            <tr>
+                <td>Количество республик</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Количество краёв</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Количество областей</td>
+                <td>46</td>
+            </tr>
+            <tr>
+                <td>Городов федерального значения</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Автономных округов</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </center>
+
+    <h3>Задание 3: Минимальная аптечка для дома (вариант 19) </h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Группа</th>
+                <th>Препарат/средство</th>
+                <th>Назначение</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Раны</td>
+                <td>Перекись водорода</td>
+                <td>Обработка</td>
+            </tr>
+            <tr>
+                <td>Пластырь бактерицидный</td>
+                <td>Закрытие ран</td>
+            </tr>
+            <tr>
+                <td>Жар/боль</td>
+                <td>Парацетамол</td>
+                <td>Снижение температуры</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">! Проверяйте сроки годности раз в пол года</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Задание 4.</h3>
+    <form>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <div style="margin-bottom: 20px;">
+                <label for="fio">ФИО*: </label>
+                <input type="text" id="fio" placeholder="Иванов Иван Иванович" required>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="email">Email*:</label>
+                <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="dob">Дата рождения: </label>
+                <input type="date" id="dob">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="photo">Фото профиля(опционально): </label><br>
+                <input type="file"id="photo" accept=".jpg, .png, .webp">
+                <small>Поддерживаются порматы JPG, PNG, WebP (до 5 МБ)</small>
+            </div>
+        </fieldset>
+    </form>
+
+    <h3>Задание 5.</h3>
+    <form>
+        <fieldset>
+             <legend style="margin-bottom: 20px;">Профессиональная сфера</legend>
+             <div style="margin-bottom: 20px;">
+             <label for="position">Должность*: <br> </label>
+                <input type="text" id="position" placeholder="Frontend-разработчик" required>
+             </div>
+
+             <div style="margin-bottom: 20px;">
+            <label for="company">Компания: <br> </label>
+                <input type="text" id="company" placeholder="Frontend-разработчик" required>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="expirience">Опыт работы*</label><br>
+                <label><input type="radio" name="expirience"> 0-1 год </label><br>
+                <label><input type="radio" name="expirience"> 1-3 года </label><br>
+                <label><input type="radio" name="expirience"> 3-5 лет </label><br>
+                <label><input type="radio" name="expirience"> Более 5 лет</label>
+            </div>
+        </fieldset>
+    </form>
+
+    <h3>Задание 6.</h3>
+    <form>
+        <fieldset>
+            <legend style="margin-bottom: 20px;">Формат участия и опции</legend>
+            <div style="margin-bottom: 20px;">
+                <label for="formate">Формат участия*:</label><br>
+                <label><input type="radio" name="formate"> Очно (Москва, Сколково)</label><br>
+                <label><input type="radio" name="formate"> Онлайн-трансляция</label><br>
+            </div>
+
+             <div style="margin-bottom: 20px;">
+                <label for="activity">Дополнительные активности (можно выбрать несколько):</label><br>
+                <label><input type="checkbox" name="activity"> Воркшоп по React</label><br>
+                <label><input type="checkbox" name="activity"> Вечер нетворкинга</label><br>
+                <label><input type="checkbox" name="activity"> Хакатон (24 часа)</label><br>
+                <label><input type="checkbox" name="activity"> Ярмарка вакансий</label><br>
+                <input type="submit" value="Отправить">
+             </div>
+        </fieldset>
+    </form>
+</body>
+</html>

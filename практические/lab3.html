@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .a {
+        color: rgb(25, 127, 161)
+    }
+
+        .block {
+            width: 750px;
+            border-left: 1px solid #E1E1E1;
+            padding-left: 30px;
+            margin-left: 10%;
+            height: 400px;
+
+    }
+
+        .block2 {
+            width: 700px;
+            border: 1px solid #bdbdbd; 
+            padding: 10px;
+            font-family: monospace;
+        }      
+        
+        .block3 {
+            width: 700px;
+            border: 1px solid #bdbdbd; 
+            padding: 2.5px;
+            font-family: monospace;
+        }    
+
+        .b {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+    <p>Собираем проект:</p>
+    <p class="block2">$ bem make</p>
+    <p>Первая сборка с <span class="block3">bem-tool</span> займет некоторое время, так как именно в этот момент в директорию проекта устанавливаются все необходимые npm-пакеты.</p>
+    <p>Для запуска сервера заполняем:</p>
+    <p class="block2">$ bem server</p>
+    <p>В результате вы увидите следующее сообщение:</p>
+    <p class="block2">info: Server is listening on port <span class="a"> 8080</span>. Point your browser to <span class="b"><u>http://localhost:8080</u></span></p>
+    <p><b>Проблема?</b></p>
+    <p>Если порт <span class="a">8080</span> уже используется другой программой, его можно переназначить с помощью аргумента <span class="block3">-p.</span></p>
+    </div>
+
+    
+</body> 
+</html>

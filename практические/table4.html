@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            height: 100%; 
+            box-shadow: 3px 3px 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+        }
+        thead th {
+
+            background-color:rgb(3, 3, 189);
+            text-align: center;
+            color: white;
+            font-size: large;
+        }
+
+        td, th {
+            width: 100px;
+            height: 50px;
+            white-space: nowrap;
+        }
+
+        tr:hover {
+        background-color: rgb(229, 247, 74);
+        cursor: pointer;
+        }
+
+        tbody tr:nth-child(odd) td{
+            background-color: rgba(200, 207, 248, 0.753);
+         }
+
+         tbody tr:nth-child(even) td{
+        background-color: rgba(240, 248, 255, 0.767);
+
+         }
+
+        td{
+            height: 35px;
+            padding: 0 15px;
+            color: #272727;
+         }
+
+         td:first-child{
+            font-weight: 600;
+            color: black;
+         }
+
+         tbody td{
+            border-bottom: 2px solid rgb(189, 188, 188);
+         }
+
+         td:last-child{
+            text-align: center;
+         }
+
+         .low{
+            color: green;
+         }
+         
+         .med{
+            color: orange;
+         }
+
+         .high{
+            color: red;
+         }
+
+
+        .prog-langs tbody tr:hover{
+        cursor: pointer;
+        transform: scale(1.01);
+        box-shadow: 0 0 15px pink;
+        }
+
+        .pro-langs tbody td:hover{
+            background-color: palevioletred;
+        }
+
+        table:has(tr > :nth-child(1):hover) tr > :nth-child(1){
+            background-color: blueviolet;
+        }
+
+        :root {
+            --bg-body: #121212;
+            --bg-surface: #1e1e1e;
+            --bg-header: #2a2a2a;
+
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --text-accent: #bb86fc;
+
+            --border-color: #333333;
+            --hover-bg: #2c2c2c;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+                <thead>
+                    <tr>
+                        <th>ЯЗЫК</th>
+                        <th>ГОД СОЗДАНИЯ</th>
+                        <th>ПАРАДИГМА</th>
+                        <th>ТИПИЗАЦИЯ</th> 
+                        <th>ПОПУЛЯРНОСТЬ</th>
+                        <th>СЛОЖНОСТЬ ДЛЯ НОВИЧКОВ</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>1991</td>
+                        <td>Мультипарадигмальный</td>
+                        <td>Динамическая</td>
+                        <td>5/5</td>
+                        <td class="low">Низкая</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1995</td>
+                        <td>Прототипная, функциональная</td>
+                        <td>Динамическая</td>
+                        <td>5/5</td>
+                        <td class="med">Средняя</td>
+                    </tr>
+
+                    <tr>
+                        <td>Java</td>
+                        <td>1995</td>
+                        <td>Объектно-ориентированная</td>
+                        <td>Статическая</td>
+                        <td>4/5</td>
+                        <td class="med">Средняя</td>
+                    </tr>
+
+                    <tr>
+                        <td>C++</td>
+                        <td>1985</td>
+                        <td>Мультипарадигмальный</td>
+                        <td>Статическая</td>
+                        <td>4/5</td>
+                        <td class="high">Высокая</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rust</td>
+                        <td>2010</td>
+                        <td>Функциональная, ОПП</td>
+                        <td>Статическая</td>
+                        <td>3/5</td>
+                        <td class="high">Очень высокая</td>
+                    </tr>
+
+                    <tr>
+                        <td>Haskell</td>
+                        <td>1990</td>
+                        <td>Функциональная</td>
+                        <td>Статическая</td>
+                        <td>2/5</td>
+                        <td class="high">Очень высокая</td>
+                    </tr>
+                </tbody>
+                
+
+
+    </table>
+</body>
+</html>
