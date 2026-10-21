@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --bg: #1a1a1a;
+            --surface: #262626;
+            --accent: #e63946;
+            --text: #f1f1f1;
+            --muted: #aaaaaa;
+            --radius: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a{
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .header{
+            background-color: var(--surface);
+            padding: 16px 32px;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--accent);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav {
+            display: flex;
+           gap: 24px 24px;
+        }
+
+        .logo{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+
+        .sidebar h3{
+            color: rgb(255, 0, 0);
+            padding-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Vinyl Store</div>
+
+
+        <nav class="nav">
+        <a href="#">Каталог</a>
+        <a href="#">Новинки</a>
+        <a href="#">Акции</a>
+        <a href="#">Контакты</a>
+    </nav>
+    <div class="cart">Корзина(0)</div>
+    </header>
+
+    <div class="content">
+        <div class="layout"></div>
+        <aside class="sidebar">
+            <h3>Жанры</h3>
+            <ul>
+                <li><a href="#">Эмбиент</a></li>
+                <li><a href="#">Индастриал</a></li>
+                <li><a href="#">IDM</a></li>
+                <li><a href="#">Электроника</a></li>
+                <li><a href="#">Блюз</a></li>
+                <li><a href="#">Экспериментальная</a></li>
+                <li><a href="#">Классика</a></li>
+                <li><a href="#">Джаз</a></li>
+            </ul>
+            <h3>Цена</h3>
+                <p>от 500р до 5000р</p>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
