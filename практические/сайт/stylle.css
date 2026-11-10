@@ -157,3 +157,65 @@
         .span:last-child{
             color: var(--text);
         }
+
+        .release-detail{
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            padding: 32px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            background-color: var(--surface);
+        }
+
+        .release-cover{
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+        }
+
+        .release-cover img{
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .release-title{
+            font-size: 32px;
+            line-height: 1.2;
+        }
+        .release-artist{
+            font-size: 20px;
+            color: var(--muted);
+        }
+        .release-genre{
+            font-size: 16px;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .release-meta{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 16px;
+            margin: 16px;
+            background-color: var(--bg);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .meta-item{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .meta-label{
+            font-size: 12px;
+            color: var(--muted);
+        }
+        .meta-value{
+            font-weight: bold;
+            font-size: 15px;
+        }
