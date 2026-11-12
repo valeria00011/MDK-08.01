@@ -6,26 +6,29 @@
     <title>Document</title>
 
     <style>
-        .element{
-            background-color: black;
-            width: 300px;
-            height: 300px;
-            color: aliceblue;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            font-size: 20px;
-
+        *{
+            margin: 0;
         }
-        .element:hover{
-            background-color: rgb(100, 43, 200);
-            transition: background-color 0.3s ease 0s;
-            transform: scale(0.2 , 0.2);
+        .element{
+            background-color: rgb(206, 206, 206);
+            width: 1000vh;
+            height: 100vh;
+            animation: fadeIn 5s 1;
+            color: black;
+        }
+        
+        
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="element">123</div>
+    <div class="element">123890-345832093849023482174</div>
 </body>
 </html>
