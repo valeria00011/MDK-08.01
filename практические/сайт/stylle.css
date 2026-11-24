@@ -41,9 +41,16 @@
         }
         .nav { 
             display: flex; 
-            gap: 24px; 
+            gap: 24px;
+        }
+        .nav a{
+            color: var(--text);
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.5s ease;
         }
         .nav a:hover { 
+            text-decoration: underline;
             color: var(--accent); 
         }
         .sidebar { 
@@ -60,9 +67,6 @@
         .sidebar li { 
             margin-bottom: 10px; 
         }
-        .sidebar a:hover { 
-            color: var(--accent); 
-        }
         .content { 
             flex: 1; 
         }
@@ -78,7 +82,12 @@
             display: grid; 
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
             gap: 24px; 
-            margin-top: 20px; 
+            margin-top: 20px;  
+        }
+
+        .cards .card{
+            opacity: 0;
+            animation: cardApper 0.5s ease forwards;
         }
         .card { 
             background: var(--surface); 
@@ -87,10 +96,59 @@
             display: flex; 
             flex-direction: column; 
             gap: 8px; 
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        @keyframes cardApper{
+            from{
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .cards .card:nth-child(1){
+            animation-delay: 0s;
+        }
+        .cards .card:nth-child(2){
+            animation-delay: 0.15s;
+        }
+        .cards .card:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        .cards .card:nth-child(4){
+            animation-delay: 0.45s;
+        }
+        .cards .card:nth-child(5){
+            animation-delay: 0.6s;
+        }
+        .cards .card:nth-child(6){
+            animation-delay: 0.75s;
+        }
+        .cards .card:nth-child(7){
+            animation-delay: 0.9s;
+        }
+        .cards .card:nth-child(8){
+            animation-delay: 1.05s;
+        }
+        .cards .card:nth-child(9){
+            animation-delay: 1.2s;
+        }
+        .cards .card:nth-child(10){
+            animation-delay: 1.35s;
         }
         .card:hover{
-            transform: scale(1.05) translate(5px);
+            box-shadow: 0 10px 10px var(--accent);
+            transform: translateY(-10px);
+        }
+
+        .card img{
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover img{
+            transform: scale(1.1);
         }
         .cover { 
             width: 100%; 
@@ -245,7 +303,9 @@
             background-color: #e63946;
             color: var(--text);
             border-radius: 8px;
-            cursor: pointer;
+            cursor: pointer; 
+            transition: 0.3s ease;
+
         }
         .btn-primary:hover{
             background-color: #b1111b;
@@ -256,6 +316,7 @@
             background-color: #1a1a1a00;
             border-radius: 8px;
             cursor: pointer;
+            transition: 0.3s ease;
         }
         .btn-secondary:hover{
             background-color: #ff3d3d;
@@ -266,7 +327,8 @@
             justify-content: space-between;
             padding: 15px;
             border-bottom: 1px solid gray;
-            cursor: pointer;
+            cursor: pointer; 
+            transition: 0.3s ease;
         } 
         
         .release-info{
@@ -275,8 +337,34 @@
             height: 100%;
         }
 
-         .tracklist li:hover{
+        .tracklist li:hover{ 
             background-color: #b1111b;
-         }
-         
+        } 
+
+        .a{ 
+            background-color: rgb(75, 74, 74);
+            height: 40px;
+            width: 160px;
+            border-radius: 8px;
+            margin: 5px 0;
+            padding: 5px;
+            color: var(--text);
+            border-left: 3px solid transparent;
+            transition: background-color 0.3s ease;
+        } 
+
+        .a a{
+            display: block;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .a:hover{ 
+            background-color: #aaaaaa;
+            border-left-color: var(--accent);
+        } 
+
+        .a:hover a{
+            color: var(--accent);
+            transform: translateX(10px);
+        }
         
